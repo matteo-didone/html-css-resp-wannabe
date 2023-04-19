@@ -163,11 +163,22 @@ img {
         flex-direction: row;
         align-items: center;
     }
+
+    .container h2
+    {
+        margin-bottom: 20px;
+    }
     
     .card 
     {
         width: 80%;
-        margin: 20px 0;
+        margin-left: 20px;
+    }
+
+    .lessons .container .row .col .card:first-child
+    {
+        position: relative;
+        left: 10px;
     }
 
     .text 
@@ -175,6 +186,28 @@ img {
         font-size: 14px; /*reduce font size*/
         line-height: 1.2; /*reduce line height*/
         margin-bottom: 10px; /*reduce margin bottom*/
+    }
+
+    .steps .container .row .col
+    {
+        padding: 0px 0px;
+    }
+
+    .why-us .container
+    {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+
+    .why-us .container h2.text-center
+    {
+        margin-bottom: 45px;
+    }
+
+    .why-us .container .row .col img
+    {
+        position: relative;
+        bottom: 135px;
     }
 }
 
