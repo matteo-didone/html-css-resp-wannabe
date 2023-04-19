@@ -211,8 +211,119 @@ img {
     }
 }
 
+/*In between mobile and tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) 
+{
+    .col 
+    {
+        flex: 1 0 calc(50% - 20px); /*Use calc() to set the width of each column to 50% and subtract the margin*/
+        margin: 10px; /*Add some margin between the columns*/
+    }
+}
 /*Mobile*/ 
 @media screen and (max-width: 480px) 
 {
+    .container 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 0px;
+    }
     
+
+    .row 
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col 
+    {
+        flex: 1 0 100%; /*Make each column take up the full width of its parent container*/
+        margin: 0;
+        padding: 0;
+    }
+
+    .card 
+    {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .lessons .container .row .col .card
+    {
+        width: 90%;
+        margin-right: 700px;
+    }
+
+    .steps .container .row .col .card
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .text
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section.steps
+    {
+        margin-bottom: 0px;
+    }
+
+    section.steps div.container div.row div.col div.card p.text
+    {
+        width: 130%;
+        position: relative;
+        right: 25px;
+    }
+
+    section.why-us
+    {
+        background-color: rgba(34,34,34,255);
+        margin-bottom: 0px;
+    }
+
+    section.why-us div.container h2
+    {
+        width: 40%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .why-us .container
+    {
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .why-us .container h2.text-center
+    {
+        margin-bottom: 50px;
+    }
+
+    .why-us .container .row .col img
+    {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        bottom: 10px;
+        left: 45px;
+        margin-bottom: 50px;
+    }
+
+    .why-us .container .row .col 
+    {
+        width: 50%;
+        margin-left: 30px;
+    }
+
 }
