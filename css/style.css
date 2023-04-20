@@ -155,4 +155,16 @@ img {
         width: 100%;
         margin-bottom: 3.5rem;
     }
+
+    .steps
+    {
+        margin: 3rem 0 0;
+    }
+
+    .why-us
+    {
+        padding-top: 3rem;
+        background-color: rgba(34,34,34,255);
+        margin-bottom: 0;
+    }
 }
